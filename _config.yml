@@ -1,5 +1,8 @@
-title: Dan the Man
+title: Daniel Gage Data Science Portfolio
 #logo: 
 description: Data Science Apprentice
 show_downloads: true
-theme: jekyll-theme-Midnight
+theme: jekyll-theme-Architect
+
+Customer Analysis Project for Data Science Professional Practice Summative Assessment
+<iframe src="https://nbviewer.org/github/YungLazy/DSPP_Data-Science-Portfolio/blob/main/Customer%20Analysis.ipynb" width="100%" height="600px"></iframe>
