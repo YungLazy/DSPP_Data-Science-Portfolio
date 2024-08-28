@@ -6,5 +6,5 @@ The following are example projects which have been completed and showcase the ar
 
 ## Project 1
 ### Customer Analysis - Used for Data Science Professional Practice Summative Assessment
-The full notebook for this assessment can be found in the files named 'Customer Analysis.pynb'.
+The full notebook for this assessment can be found in the files named 'Customer Analysis.ipynb'.
 
