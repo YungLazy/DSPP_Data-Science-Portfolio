@@ -24,7 +24,10 @@
 
         /* Layout Styling */
         .top-section {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* space between headshot and intro*/
             padding: 20px;
         }
 
@@ -51,7 +54,7 @@
             color: #333;
             font-size: 1.2em;
             line-height: 1.6;
-            text-align: left; /* Align intro text to the left */
+            text-align: center; /* Align intro text to the center */
         }
         .intro p {
             margin: 15px 0;
@@ -91,6 +94,13 @@
             flex: 2;
             padding: 15px;
             margin-left: 20px;
+        }
+
+        .extended-intro{
+            font-style: italic;
+            colour: #333;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         /* Styling for Headings and Links */
