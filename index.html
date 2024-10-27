@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Gage - Data Science Portfolio</title>
+    <!-- Added Google Fonts link for Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* General Styling */
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f8f8f5;  /* Updated eggshell color */
         }
+        
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
             color: white;
             padding: 1em;
             text-align: center;
         }
+        
         header h1 {
-            color: white; /* Change this color as desired */
+            color: white;
+            font-family: 'Open Sans', sans-serif;
         }
 
         /* Layout Styling */
@@ -27,7 +32,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* space between headshot and intro*/
+            gap: 20px;
             padding: 20px;
         }
 
@@ -36,15 +41,17 @@
             max-width: 150px;
             text-align: center;
         }
+        
         .headshot {
             width: 100%;
-            border-radius: 50%; /* Circular headshot */
+            border-radius: 50%;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 10px;
         }
+        
         .linkedin-link {
             text-decoration: none;
-            color: #0077b5; /* LinkedIn blue color */
+            color: #0077b5;
             font-weight: bold;
         }
 
@@ -54,8 +61,10 @@
             color: #333;
             font-size: 1.2em;
             line-height: 1.6;
-            text-align: center; /* Align intro text to the center */
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
         }
+        
         .intro p {
             margin: 15px 0;
         }
@@ -75,18 +84,28 @@
             max-width: 300px;
         }
 
+        /* Project Group Styling */
+        .project-group {
+            transition: transform 0.2s ease;
+        }
+
+        .project-group:hover {
+            transform: scale(1.05);
+        }
+
         /* Style for Thumbnails */
         .project-thumbnail {
-            width: 150px; /* Fixed width for smaller thumbnail */
+            width: 150px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 15px;
-            transition: transform 0.2s ease;
-            object-fit: cover; /* Keeps image aspect ratio */
+            object-fit: cover;
         }
+
+        /* Remove individual thumbnail hover effect */
         .project-thumbnail:hover {
-            transform: scale(1.05);
+            transform: none;
         }
 
         /* Right Column */
@@ -96,10 +115,11 @@
             margin-left: 20px;
         }
 
-        .extended-intro{
+        .extended-intro {
             font-style: italic;
-            colour: #333;
+            color: #333;
             line-height: 1.6;
+            font-family: 'Open Sans', sans-serif;
         }
 
         /* Styling for Headings and Links */
@@ -107,21 +127,29 @@
             color: #555;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
+            font-family: 'Open Sans', sans-serif;
         }
+        
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
         ul {
             list-style-type: none;
             padding: 0;
         }
+        
         li {
             margin: 10px 0;
+            font-family: 'Open Sans', sans-serif;
         }
-        li:hover{
-            transform: scale(1.05);
-        }
+        
         a {
             text-decoration: none;
             color: #0066cc;
+            font-family: 'Open Sans', sans-serif;
         }
+        
         a:hover {
             text-decoration: underline;
         }
@@ -151,24 +179,50 @@
             <h2>Featured Projects</h2>
             <h3>Jupyter Notebooks</h3>
             <ul>
-                <li><a href="https://nbviewer.org/github/YungLazy/DSPP_Data-Science-Portfolio/blob/main/Customer%20Analysis.ipynb" target="_blank">Random Forest Analysis - Customer Behaviour</a></li>
-                    <img src="Assets/Images/Screenshot 2024-08-27 at 20.31.01.png" alt="Correlation Matrix" class="project-thumbnail">
-                <li><a href="link-to-your-notebook-2" target="_blank">K-Means Cluster Analysis - Member Segmentation</a></li>
-                <!-- Add more notebooks as needed -->
+                <li>
+                    <div class="project-group">
+                        <a href="https://nbviewer.org/github/YungLazy/DSPP_Data-Science-Portfolio/blob/main/Customer%20Analysis.ipynb" target="_blank">Random Forest Analysis - Customer Behaviour</a>
+                        <img src="Assets/Images/Screenshot 2024-08-27 at 20.31.01.png" alt="Correlation Matrix" class="project-thumbnail">
+                    </div>
+                </li>
+                <li>
+                    <div class="project-group">
+                        <a href="link-to-your-notebook-2" target="_blank">K-Means Cluster Analysis - Member Segmentation</a>
+                        <!-- Add thumbnail image here -->
+                    </div>
+                </li>
             </ul>
 
             <h3>Excel Projects</h3>
             <ul>
-                <li><a href="link-to-your-excel-1" target="_blank">Excel Analysis 1</a></li>
-                <li><a href="link-to-your-excel-2" target="_blank">Excel Analysis 2</a></li>
-                <!-- Add more Excel projects as needed -->
+                <li>
+                    <div class="project-group">
+                        <a href="link-to-your-excel-1" target="_blank">Excel Analysis 1</a>
+                        <!-- Add thumbnail image here if needed -->
+                    </div>
+                </li>
+                <li>
+                    <div class="project-group">
+                        <a href="link-to-your-excel-2" target="_blank">Excel Analysis 2</a>
+                        <!-- Add thumbnail image here if needed -->
+                    </div>
+                </li>
             </ul>
 
             <h3>Dashboard Screenshots</h3>
             <ul>
-                <li><a href="link-to-your-image-1" target="_blank">Dashboard Screenshot 1</a></li>
-                <li><a href="link-to-your-image-2" target="_blank">Dashboard Screenshot 2</a></li>
-                <!-- Add more screenshots as needed -->
+                <li>
+                    <div class="project-group">
+                        <a href="link-to-your-image-1" target="_blank">Dashboard Screenshot 1</a>
+                        <!-- Add thumbnail image here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="project-group">
+                        <a href="link-to-your-image-2" target="_blank">Dashboard Screenshot 2</a>
+                        <!-- Add thumbnail image here -->
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -183,6 +237,7 @@
                 
                 <p>Feel free to explore my projects and see how I'm applying data science principles in practical, impactful ways.</p>
             </div>
+            
             <h2>About Each Project</h2>
             <p>Add descriptions of your projects here. Provide context on what you achieved in each project, the tools you used, and the insights you derived.</p>
 
@@ -194,10 +249,7 @@
 
             <h3>Dashboard Screenshot 1</h3>
             <p>This dashboard visualizes...</p>
-            <!-- Add more descriptions as needed -->
         </div>
-
     </div>
-
 </body>
 </html>
