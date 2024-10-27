@@ -3,93 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Gage - Data Science Portfolio</title>
+    <title>Your Name - Data Science Portfolio</title>
     <style>
-    /* General Styling */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-    }
-    header {
-        background-color: #333;
-        color: white;
-        padding: 1em;
-        text-align: center;
-    }
-    header h1 {
-        color: #ffcc00; /* Change this color as desired */
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-    }
-    h1 {
-        color: #333;
-    }
-    h2 {
-        color: #555;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        margin: 10px 0;
-    }
-    a {
-        text-decoration: none;
-        color: #0066cc;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        header h1 {
+            color: #ffcc00; /* Change this color as desired */
+        }
+
+        /* Layout Styling */
+        .top-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        /* Left Column */
+        .left-column {
+            flex: 1;
+            padding: 15px;
+            border-right: 2px solid #ddd;
+            max-width: 300px;
+        }
+
+        /* Right Column */
+        .right-column {
+            flex: 2;
+            padding: 15px;
+            margin-left: 20px;
+        }
+
+        /* Styling for Headings and Links */
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Daniel Gage</h1>
-        <p>Data Science Apprentice | Data Visualisation & Communication | Research Enthusiast</p>
+        <h1>Your Name</h1>
+        <p>Data Scientist | Machine Learning Enthusiast | Data Visualisation Expert</p>
     </header>
 
-    <!-- Main Container -->
-    <div class="container">
+    <!-- Introduction Section -->
+    <div class="top-section">
+        <p class="intro">
+            Welcome to my portfolio! Here you'll find a showcase of my data science projects, including Jupyter notebooks, Excel analyses, and dashboard visualizations. Each project highlights my skills in data analysis, machine learning, and visual storytelling.
+        </p>
+    </div>
+
+    <!-- Main Content Area with Left and Right Columns -->
+    <div class="main-content">
         
-        <!-- Jupyter Notebooks Section -->
-        <section>
-            <h2>Machine Learning Notebooks</h2>
+        <!-- Left Column for Links and Images -->
+        <div class="left-column">
+            <h2>Projects</h2>
+            <h3>Jupyter Notebooks</h3>
             <ul>
                 <li><a href="link-to-your-notebook-1" target="_blank">Project Title 1</a></li>
                 <li><a href="link-to-your-notebook-2" target="_blank">Project Title 2</a></li>
                 <!-- Add more notebooks as needed -->
             </ul>
-        </section>
 
-        <!-- Excel Projects Section -->
-        <section>
-            <h2>Deployed Dashboard Creations</h2>
+            <h3>Excel Projects</h3>
             <ul>
                 <li><a href="link-to-your-excel-1" target="_blank">Excel Analysis 1</a></li>
                 <li><a href="link-to-your-excel-2" target="_blank">Excel Analysis 2</a></li>
                 <!-- Add more Excel projects as needed -->
             </ul>
-        </section>
 
-        <!-- Dashboard Screenshots Section -->
-        <section>
-            <h2>Excel Projects</h2>
+            <h3>Dashboard Screenshots</h3>
             <ul>
                 <li><a href="link-to-your-image-1" target="_blank">Dashboard Screenshot 1</a></li>
                 <li><a href="link-to-your-image-2" target="_blank">Dashboard Screenshot 2</a></li>
                 <!-- Add more screenshots as needed -->
             </ul>
-        </section>
+        </div>
+
+        <!-- Right Column for Project Descriptions -->
+        <div class="right-column">
+            <h2>About Each Project</h2>
+            <p>Add descriptions of your projects here. Provide context on what you achieved in each project, the tools you used, and the insights you derived.</p>
+
+            <h3>Project Title 1</h3>
+            <p>This project demonstrates...</p>
+
+            <h3>Excel Analysis 1</h3>
+            <p>This analysis explores...</p>
+
+            <h3>Dashboard Screenshot 1</h3>
+            <p>This dashboard visualizes...</p>
+            <!-- Add more descriptions as needed -->
+        </div>
+
     </div>
 
 </body>
