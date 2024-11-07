@@ -33,12 +33,13 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            padding: 20px;
+            padding: 15px;
         }
 
-        /* Headshot Column */
+        /* Headshot Column Styling */
         .headshot-column {
-            max-width: 150px;
+            flex: 0 0 150px; /* Fixes the headshot column width */
+            margin-right: 20px; /* Space between headshot and intro text */
             text-align: left;
         }
         
@@ -57,7 +58,7 @@
             text-decoration: none;
             color: #0077b5;
             font-weight: bold;
-            font-size: 1.3em;
+            font-size: 0.8em;
         }
 
         /* Intro Section */
@@ -221,7 +222,7 @@
 
     <!-- Introduction Section -->
     <div class="top-section">
-        <div class="headshot">
+        <div class="headshot-column">
             <img src="Assets/Images/headsho1.jpg"class="headshot">
             <!-- LinkedIn Link -->
             <a href="https://www.linkedin.com/in/daniel-gage-08a7a61a1/" target="_blank" class="linkedin-link">Connect with me on LinkedIn</a>
