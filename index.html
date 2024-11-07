@@ -16,8 +16,10 @@
         }
         
         header {
-            background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
-                        url('Assets/Images/webb-dark.png');
+            
+            background: url('Assets/Images/webb-dark.png')repeat,
+                        linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+            background-size: 200px 200px, cover;
             background-blend-mode: overlay;
             color: white;
             padding: 1em;
