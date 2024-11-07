@@ -112,21 +112,6 @@
         .project-thumbnail:hover {
             transform: none;
         }
-        /* Style for Blog Thumbnails */
-        .blog-thumbnail {
-            width: 150px;
-            height: auto;
-            border-radius: 0px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 0px;
-            object-fit: cover;
-            margin-left:0;
-        }
-
-        /* Remove individual thumbnail hover effect */
-        .blog-thumbnail:hover {
-            transform: none;
-        }
         
         /* Right Column */
         .right-column {
@@ -142,6 +127,54 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+             /* Blog Posts Section */
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .blog-post {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+
+        .blog-post:last-child {
+        border-bottom: none;
+        }
+
+        /* Thumbnail styling for Blog Posts */
+        .blog-thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0; /* Ensures no extra space on the left */
+        }
+        
+        /* Blog Content (title and description) */
+        .blog-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .blog-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        .blog-description {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.4;
+        }
+            
         /* Styling for Headings and Links */
         h2 {
             color: #555;
@@ -263,10 +296,24 @@
                 <p>Feel free to explore my projects and see how I'm applying data science principles in practical, impactful ways.</p>
             </div>
 
-            <h2>Medium Blog Posts</h2>
-                <h3>A Student's Take-aways from Big Data LDN 2024</h3>
-                    <a href="https://medium.com/@dannygage7/a-students-take-aways-from-big-data-ldn-2024-d8aa463e42b0">Big Data LDN 2024 Take-aways</a>
-                    <img src="Assets/Images/66d79a779cdda972d5c4b3cf_onedata_featured_event_big-data-london_2024.png" alt="Big Data LDN 2024" class="blog-thumbnail">
+            <!-- Blog Posts Section -->
+            <div class="blog-posts">
+                <h2>Medium Blog Posts</h2>
+                
+                <!-- Individual Blog Post Entry -->
+                <div class="blog-post">
+                    <img src="Assets/Images/66d79a779cdda972d5c4b3cf_onedata_featured_event_big-data-london_2024.png" 
+                         alt="Big Data LDN 2024" class="blog-thumbnail">
+                    <div class="blog-content">
+                        <a href="https://medium.com/@dannygage7/a-students-take-aways-from-big-data-ldn-2024-d8aa463e42b0" 
+                           class="blog-title">A Student's Take-aways from Big Data LDN 2024</a>
+                        <p class="blog-description">Insights and key takeaways from the Big Data LDN 2024 conference, highlighting the latest trends in data science and analytics.</p>
+                    </div>
+                </div>
+            
+                <!-- Additional Blog Post Entries can be added here in the same format -->
+            </div>
+
 
             <h3>Project Title 1</h3>
             <p>This project demonstrates...</p>
